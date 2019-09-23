@@ -24,7 +24,7 @@ for t in my_turtles:
     t.pencolor(new_color)
     t.fillcolor(new_color)
     t.begin_fill()
-    t.setheading
+    t.setheading(direction)
     t.penup()
     t.end_fill()
     t.goto(startx, starty)
@@ -36,6 +36,7 @@ for t in my_turtles:
 #	set new start x and start y
     startx = t.xcor()
     starty = t.ycor()
+    direction=t.heading()
 
 wn = trtl.Screen()
 wn.mainloop()
